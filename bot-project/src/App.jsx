@@ -16,7 +16,8 @@ import geminiLogo from './assets/logos/gemini.png';
 import PixelCard from './components/PixelCard';
 import HowItWorks from './components/HowItWorks';
 import FAQs from './components/FAQs';
-
+import GetInTouch from './components/GetInTouch';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -131,7 +132,7 @@ function App() {
         <Silk
           speed={5}
           scale={1}
-          color="#7d0be0ff"
+          color="#0d7ecfff"
           noiseIntensity={1.5}
           rotation={0}
         />
@@ -175,9 +176,18 @@ function App() {
   <PixelCard variant="blue" className="about-pixel-card" />
 
         <HowItWorks />
-       <section id="FAQs">
-  <FAQs />
-</section>
+        <section id="FAQs">
+          <FAQs />
+        </section> 
+
+        <section id="getintouch">
+          <GetInTouch />
+        </section>
+
+        <section>
+          <Footer />
+        </section>
+
       </main>
     </div>
   );
